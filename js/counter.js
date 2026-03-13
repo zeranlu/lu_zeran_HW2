@@ -51,6 +51,16 @@ export class Counter {
         this.count++;
         this.update();
     }
+
+    decrement() {
+        this.count--;
+        this.update();
+    }
+
+    reset() {
+        this.count = 0;
+        this.update();
+    }
     // add new state methods, and "if" restrictions
     // // decrement() {
     //     this.count--;
