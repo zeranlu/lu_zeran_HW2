@@ -32,9 +32,17 @@ export class Counter {
         // When this first get mounted, update the display
         this.update();
 
-        this.button.addEventListener("click", () => {
-            this.increment()
+        this.IncButton.addEventListener("click", () => {
+            this.increment();
         });
+
+        this.DecButton.addEventListener("click", () => {
+            this.decrement();
+        })
+
+        this.ResButton.addEventListener("click", () => {
+            this.reset();
+        })
         // add new button event listeners
     }
 
