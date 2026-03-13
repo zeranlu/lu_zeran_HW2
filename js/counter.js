@@ -24,7 +24,9 @@ export class Counter {
 
         // Append display and button into the container div
         container.appendChild(this.display);
-        container.appendChild(this.button);
+        container.appendChild(this.IncButton);
+        container.appendchild(this.DecButton);
+        container.appendChild(this.ResButton);
         // append new buttons
         
         // When this first get mounted, update the display
