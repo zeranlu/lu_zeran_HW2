@@ -17,7 +17,9 @@ export class Counter {
         // this.reset
 
         // set button text
-        this.button.textContent = "Increment";
+        this.IncButton.textContent = "Increment";
+        this.DecButton.textContent = "Decrement";
+        this.ResButton.textContent = "Reset";
         // Set new button text
 
         // Append display and button into the container div
