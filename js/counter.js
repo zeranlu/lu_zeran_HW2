@@ -53,7 +53,13 @@ export class Counter {
     }
 
     decrement() {
-        this.count--;
+
+        if (this.count > 0) {
+            this.count--;    
+        } else {
+            return;
+        }
+        
         this.update();
     }
 
