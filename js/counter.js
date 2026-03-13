@@ -25,7 +25,7 @@ export class Counter {
         // Append display and button into the container div
         container.appendChild(this.display);
         container.appendChild(this.IncButton);
-        container.appendchild(this.DecButton);
+        container.appendChild(this.DecButton);
         container.appendChild(this.ResButton);
         // append new buttons
         
@@ -53,7 +53,13 @@ export class Counter {
     }
 
     decrement() {
-        this.count--;
+
+        if (this.count > 0) {
+            this.count--;    
+        } else {
+            return;
+        }
+        
         this.update();
     }
 
