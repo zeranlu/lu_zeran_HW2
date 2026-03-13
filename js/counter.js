@@ -9,8 +9,9 @@ export class Counter {
         const container = document.querySelector(this.selector);
 
         this.display = document.createElement("div");
-        this.button = document.createElement("button");
-
+        this.IncButton = document.createElement("button");
+        this.DecButton = document.createElement("button");
+        this.ResButton = document.createElement("button");
         // Add Buttons, decrement, reset
         // this.decrement
         // this.reset
