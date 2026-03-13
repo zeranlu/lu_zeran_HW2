@@ -85,11 +85,19 @@ export class Counter {
 
 
 class StepCounter extends Counter {
-    constructor(selector, initialValue = 0, step = 1) {
+    constructor(selector, initialValue = 0, step = 5) {
+        
         super(selector, initialValue);
+
+        this.count = initialValue;
+        this.selector - selector;
+        this.step = step;
+        this.mount();
         // add step property
         // this.step = step;
     }
+
+    
     // increment() {}
     // decrement() {} both at different values
 }   
