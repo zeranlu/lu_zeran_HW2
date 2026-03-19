@@ -99,7 +99,11 @@ class StepCounter extends Counter {
         // this.step = step;
     }
 
-    
+    // override parent increment
+    increment() {
+        this.count = this.count + this.step;
+        this.update();
+    }
     // increment() {}
     // decrement() {} both at different values
 }   
