@@ -99,6 +99,16 @@ export class StepCounter extends Counter {
         // this.step = step;
     }
 
+    mount() {
+        super.mount();
+
+        this.stepButtonInc = document.createElement("button");
+        this.stepButtonInc.textContent = "Increment by Step";
+
+        this.stepButtonDec = document.createElement("button");
+        this.stepButtonDec.textContent = "Decrement by Step";
+    }
+
     // override parent increment
     increment() {
         this.count = this.count + this.step;
