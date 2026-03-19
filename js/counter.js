@@ -90,7 +90,7 @@ export class Counter {
 // StepCounter is the sub class
 
 
-class StepCounter extends Counter {
+export class StepCounter extends Counter {
     constructor(selector, initialValue = 0, step = 1) {
         // super is the keyword that allows parent inheritance
         super(selector, initialValue);
