@@ -91,14 +91,10 @@ export class Counter {
 
 
 class StepCounter extends Counter {
-    constructor(selector, initialValue = 0, step = 5) {
-        
+    constructor(selector, initialValue = 0, step = 1) {
+        // super is the keyword that allows parent inheritance
         super(selector, initialValue);
-
-        this.count = initialValue;
-        this.selector - selector;
         this.step = step;
-        this.mount();
         // add step property
         // this.step = step;
     }
