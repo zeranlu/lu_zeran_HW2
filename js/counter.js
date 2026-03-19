@@ -104,6 +104,11 @@ class StepCounter extends Counter {
         this.count = this.count + this.step;
         this.update();
     }
+
+    decrement() {
+        this.count = this.count - this.step;
+        this.update();
+    }
     // increment() {}
     // decrement() {} both at different values
 }   
