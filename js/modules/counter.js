@@ -151,6 +151,12 @@ export class StepCounter extends Counter {
 
     update() {
         this.display.textContent = `Step: ${this.count}`;
+
+        if (this.count < this.step) {
+            this.DecButton.classList.add("blocked");
+        } else {
+            this.DecButton.classList.remove("blocked");
+        }
     }
     // increment() {}
     // decrement() {} both at different values

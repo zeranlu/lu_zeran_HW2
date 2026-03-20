@@ -38,6 +38,7 @@
     cursor: not-allowed;
   }
 
-  button.blocked:active {
+  button.blocked:hover {
     transform: none;
+    transition: none;
   }
