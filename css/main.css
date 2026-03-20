@@ -1,5 +1,6 @@
 .counter {
   border: solid 1px #c5c5c5;
+  background-color: #FFF;
   margin-top: 40px;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -38,4 +39,87 @@ button.blocked {
 button.blocked:hover {
   transform: none;
   transition: none;
+}
+
+.cookies {
+  margin: 4rem;
+}
+
+.cookies:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(110%);
+}
+
+.cookies:active {
+  transform: scale(90%);
+}
+
+@media screen and (min-width: 768px) {
+  .cookies {
+    margin: 2rem;
+  }
+}
+header {
+  background-color: #2b658a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 200%;
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+}
+body {
+  background-color: #a4744e;
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+  margin-top: 5%;
+  color: #FFF;
+}
+
+.hero {
+  background-color: #245576;
+  border: 1rem solid #542d24;
+}
+
+.strike-text.strike {
+  text-decoration: line-through;
+}
+
+#overview-section {
+  background-color: #2b658a;
+}
+
+#use-section {
+  background-color: #245576;
+}
+
+#demo-section {
+  background-color: #2b658a;
 }/*# sourceMappingURL=main.css.map */

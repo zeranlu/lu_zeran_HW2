@@ -1,53 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>OOP Counter</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7COpen+Sans" rel="stylesheet" type="text/css">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- GSAP LINKING -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-    <!-- GSAP Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
-
-    <script type="module" defer src="js/main.js"></script>
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#overview-section">Overview</a>
-                </li>
-
-                <li>
-                    <a href="#use-section">Use</a>
-                </li>
-
-                <li>
-                    <a href="#demo-section">Demo</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="hidden">OOP Homework #2 Demo Page</h1>
-
-    <!-- hero -->
-    <div class="hero grid-con">
-
-        <h2 class="col-span-full">Welcome to the <span class="strike-text">Cookie</span> Counter Tutorial</h2>
-
-        <a href="" class="cookies col-span-full m-col-span-6 m-col-start-4">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
 <path style="fill:#DC774E;" d="M211.805,8.17c79.011,0,147.51,44.991,181.27,110.755c-27.844-14.292-59.425-22.365-92.879-22.365
 	c-112.466,0-203.634,91.169-203.634,203.634c0,33.454,8.072,65.035,22.365,92.879C53.161,359.315,8.17,290.816,8.17,211.805
@@ -111,57 +64,4 @@
 		c-107.78,0-195.466-87.686-195.466-195.467c0-107.779,87.686-195.466,195.466-195.466
 		c107.781,0.001,195.467,87.687,195.467,195.466C495.66,407.974,407.974,495.66,300.192,495.66z"/>
 </g>
-            </svg>
-        </a>
-    </div>
-
-    <!-- overview section -->
-    <section id="overview-section">
-        <h2>OOP Overview</h2>
-
-        <div class="overview-text-con grid-con">
-            <p class="col-span-2 m-col-span-4 m-col-start-2">This is usable, and extendable "Counter" class that is created using JavaScript OOP principles. The Counter counters increment and decrement by 1 as requested. However, they cannot decrement below 0. Additionally, there is also a requested reset button that resets the Count to 0, or to its initial value depending on each cases' unique setup.</p>
-
-            <p class="col-span-2 m-col-span-4 m-col-start-8">Additionally, there was also request to be able extend said Counter class, and create a separate class of counters under a "Step" class. In this class, specific Step values can be requested or specified and the previously established increment() and decrement() methods will adopt these new conditions.</p>
-        </div>
-    </section>
-
-    <!-- use section -->
-    <section id="use-section">
-        <h2>Use Case</h2>
-
-        <div class="use-text-con grid-con">
-            <p class="col-span-2 m-col-span-4 m-col-start-2">To use these Counters and Step counter classes, simply click through the various buttons to activate its various respective methods. With the click a button, you can store and count each respective counter as many times as you want.</p>
-
-            <p class="col-span-2 m-col-span-4 m-col-start-8">Additionally if one would like to manipulate and control the individual counter parameters, simply go to the JavaScript file called "main.js". In this page, you will see all the paramters of each counter as they get instantiated.</p>
-
-            <p class="col-span-full m-col-start-2 m-col-end-12">
-            In each instantiation, you will see specifics following commas, and a big code-looking strings like <span class="code-snip">"#counter-container2", 3</span>. The key to look for is the number after the comma. In this previous example, the number 3 represents the initial value of the Counter. Let's look at another example in Counter 4, notice the code snippet: <span class="code-snip">"#counter-container4", 5, 10</span>. Here, the number 5 is again, the initial value, and the number 10 after that means the specific and individual "Step" couint for that container.
-            </p>
-        </div>
-    </section>
-
-    <!-- demo section -->
-    <section id="demo-section">
-
-        <h2>Demo Section</h2>
-
-        <div class="grid-con">
-
-            <h2 class="col-span-full">Counters</h2>
-            <div id="counter-container1" class="counter col-span-full m-col-span-6"></div>
-            <div id="counter-container2" class="counter col-span-full m-col-span-6"></div>
-        
-        </div>
-
-        <div class="grid-con">
-            
-            <h2 class="col-span-full">Step Counters</h2>
-            <div id="counter-container3" class="counter col-span-full m-col-span-6">Step Value: Default (1)</div>
-            <div id="counter-container4" class="counter col-span-full m-col-span-6">Step Value: 10</div>
-
-        </div>
-    </section>
-    
-</body>
-</html>
+</svg>

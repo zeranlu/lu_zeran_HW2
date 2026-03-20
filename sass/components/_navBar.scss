@@ -1,0 +1,36 @@
+@use '../abstracts' as a;
+
+header {
+    background-color: a.$secondary-color;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    margin: auto;
+};
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 200%;
+    text-decoration: none;
+    color: a.$white;
+}
+
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        width: 50%;
+        margin: 0 0 0 auto;
+    };
+}
