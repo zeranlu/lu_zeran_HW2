@@ -1,5 +1,5 @@
-import { Counter } from './counter.js';
-import { StepCounter } from './counter.js';
+import { Counter } from './modules/counter.js';
+import { StepCounter } from './modules/counter.js';
 
 // default counter counter
 const counter1 = new Counter("#counter-container1");
