@@ -96,13 +96,24 @@ body {
   background-color: #a4744e;
 }
 
+section {
+  color: #FFF;
+  padding: 2rem;
+}
+
 h2 {
   text-align: center;
   font-size: 200%;
-  margin-top: 5%;
   color: #FFF;
 }
 
+h3 {
+  font-size: 150%;
+}
+
+.hero h2 {
+  margin-top: 5%;
+}
 .hero {
   background-color: #245576;
   border: 1rem solid #542d24;
@@ -116,10 +127,22 @@ h2 {
   background-color: #2b658a;
 }
 
+.overview-text-con p, .use-text-con p {
+  padding: 1rem;
+}
+
 #use-section {
   background-color: #245576;
 }
 
 #demo-section {
   background-color: #2b658a;
+}
+#demo-section h3 {
+  margin-top: 2%;
+}
+
+#overview-section, #use-section, #demo-section {
+  border: 1rem solid #542d24;
+  margin: 2rem;
 }/*# sourceMappingURL=main.css.map */
