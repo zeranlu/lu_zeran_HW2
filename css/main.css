@@ -38,4 +38,12 @@ button.blocked {
 button.blocked:hover {
   transform: none;
   transition: none;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.strike-text.strike {
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */

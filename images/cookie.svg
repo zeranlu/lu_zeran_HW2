@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>OOP Counter</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7COpen+Sans" rel="stylesheet" type="text/css">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- GSAP LINKING -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
-    <!-- GSAP Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/DrawSVGPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
-
-    <script type="module" defer src="js/main.js"></script>
-</head>
-
-<body>
-    <h1 class="hidden">OOP Homework #2 Demo Page</h1>
-
-    <!-- hero -->
-    <header class="hero grid-con">
-
-        <h2 class="col-span-full">Welcome to the <span class="strike-text">Cookie</span> Clicker Tutorial</h2>
-
-        <a href="#" class="cookies col-span-full m-col-span-6 m-col-start-4">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
 <path style="fill:#DC774E;" d="M211.805,8.17c79.011,0,147.51,44.991,181.27,110.755c-27.844-14.292-59.425-22.365-92.879-22.365
 	c-112.466,0-203.634,91.169-203.634,203.634c0,33.454,8.072,65.035,22.365,92.879C53.161,359.315,8.17,290.816,8.17,211.805
@@ -93,25 +64,4 @@
 		c-107.78,0-195.466-87.686-195.466-195.467c0-107.779,87.686-195.466,195.466-195.466
 		c107.781,0.001,195.467,87.687,195.467,195.466C495.66,407.974,407.974,495.66,300.192,495.66z"/>
 </g>
-            </svg>
-        </a>
-    </header>
-
-
-    <div class="grid-con">
-
-        <h2 class="col-span-full">Counters</h2>
-        <div id="counter-container1" class="counter col-span-full m-col-span-6"></div>
-        <div id="counter-container2" class="counter col-span-full m-col-span-6"></div>
-        
-    </div>
-
-    <div class="grid-con">
-        
-        <h2 class="col-span-full">Step Counters</h2>
-        <div id="counter-container3" class="counter col-span-full m-col-span-6">Step Value: Default (1)</div>
-        <div id="counter-container4" class="counter col-span-full m-col-span-6">Step Value: 10</div>
-
-    </div>
-</body>
-</html>
+</svg>
