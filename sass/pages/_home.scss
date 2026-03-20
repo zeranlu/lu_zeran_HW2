@@ -4,14 +4,27 @@ body {
     background-color: a.$tertiary-color;
 }
 
+section {
+    color: a.$white;
+    padding: 2rem;
+}
+
 h2 {
     text-align: center;
     font-size: 200%;
-    margin-top: 5%;
     color: a.$white;
 }
 
+h3 {
+    font-size: 150%;
+    
+}
+
 .hero {
+
+    h2 {
+        margin-top: 5%;
+    }
 
     background-color: a.$primary-color;
     border: 1rem solid a.$accent-color;
@@ -21,14 +34,30 @@ h2 {
     text-decoration: line-through;
 }
 
+// OVERVIEW
 #overview-section {
     background-color: a.$secondary-color;
 }
 
+.overview-text-con p, .use-text-con p {
+    padding: 1rem;
+}
+
+// USE
 #use-section {
     background-color: a.$primary-color;
 }
 
+// DEMO
 #demo-section {
     background-color: a.$secondary-color;
+
+    h3 {
+        margin-top: 2%;
+    }
+}
+
+#overview-section, #use-section, #demo-section {
+    border: 1rem solid a.$accent-color;
+    margin: 2rem;
 }
