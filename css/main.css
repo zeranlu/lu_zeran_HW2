@@ -1,5 +1,6 @@
 .counter {
   border: solid 1px #c5c5c5;
+  background-color: #FFF;
   margin-top: 40px;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
