@@ -114,6 +114,16 @@ export class StepCounter extends Counter {
         stepContainer.appendChild(this.stepDisplay);
         stepContainer.appendChild(this.stepButtonInc);
         stepContainer.appendChild(this.stepButtonDec);
+
+        this.update();
+
+        this.stepButtonInc.addEventListener("click", () => {
+            this.increment();
+        });
+
+        this.stepButtonDec.addEventListener("click", () => {
+            this.decrement();
+        });
     }
 
     // override parent increment
