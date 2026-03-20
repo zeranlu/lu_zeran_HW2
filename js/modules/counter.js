@@ -1,6 +1,7 @@
 export class Counter {
     constructor(selector, initialValue = 0) {
         this.count = initialValue;
+        this.initialValue = initialValue;
         this.selector = selector;
         this.mount();
     }
@@ -64,7 +65,7 @@ export class Counter {
     }
 
     reset() {
-        this.count = 0;
+        this.count = this.initialValue;
         this.update();
     }
     // add new state methods, and "if" restrictions
@@ -117,13 +118,13 @@ export class StepCounter extends Counter {
 
         this.update();
 
-        this.IncButton.addEventListener("click", () => {
-            this.increment();
-        });
+        // this.IncButton.addEventListener("click", () => {
+        //     this.increment();
+        // });
 
-        this.DecButton.addEventListener("click", () => {
-            this.decrement();
-        });
+        // this.DecButton.addEventListener("click", () => {
+        //     this.decrement();
+        // });
     }
 
     // override parent increment
@@ -134,7 +135,7 @@ export class StepCounter extends Counter {
 
     decrement() {
 
-        if (this.count > 0) {
+        if (this.count >= this.step) {
             this.count = this.count - this.step;
             this.update();
         } else {
