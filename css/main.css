@@ -32,5 +32,9 @@ button.blocked {
   background: red;
   color: white;
   filter: grayscale(50%);
-  cursor: none;
+  cursor: not-allowed;
+}
+
+button.blocked:active {
+  transform: none;
 }/*# sourceMappingURL=main.css.map */
