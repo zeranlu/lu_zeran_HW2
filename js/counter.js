@@ -105,23 +105,23 @@ export class StepCounter extends Counter {
         const stepContainer = document.querySelector(this.selector);
 
         this.stepDisplay = document.createElement("div");
-        this.stepButtonInc = document.createElement("button");
-        this.stepButtonInc.textContent = "Increment by Step";
+        // this.stepButtonInc = document.createElement("button");
+        this.IncButton.textContent = "Increment by Step";
 
-        this.stepButtonDec = document.createElement("button");
-        this.stepButtonDec.textContent = "Decrement by Step";
+        // this.stepButtonDec = document.createElement("button");
+        this.DecButton.textContent = "Decrement by Step";
 
         stepContainer.appendChild(this.stepDisplay);
-        stepContainer.appendChild(this.stepButtonInc);
-        stepContainer.appendChild(this.stepButtonDec);
+        // stepContainer.appendChild(this.stepButtonInc);
+        // stepContainer.appendChild(this.stepButtonDec);
 
         this.update();
 
-        this.stepButtonInc.addEventListener("click", () => {
+        this.IncButton.addEventListener("click", () => {
             this.increment();
         });
 
-        this.stepButtonDec.addEventListener("click", () => {
+        this.DecButton.addEventListener("click", () => {
             this.decrement();
         });
     }
