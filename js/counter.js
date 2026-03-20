@@ -117,13 +117,13 @@ export class StepCounter extends Counter {
 
         this.update();
 
-        this.IncButton.addEventListener("click", () => {
-            this.increment();
-        });
+        // this.IncButton.addEventListener("click", () => {
+        //     this.increment();
+        // });
 
-        this.DecButton.addEventListener("click", () => {
-            this.decrement();
-        });
+        // this.DecButton.addEventListener("click", () => {
+        //     this.decrement();
+        // });
     }
 
     // override parent increment
