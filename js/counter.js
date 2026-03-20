@@ -136,6 +136,10 @@ export class StepCounter extends Counter {
         this.count = this.count - this.step;
         this.update();
     }
+
+    update() {
+        this.display.textContent = `Step: ${this.count}`;
+    }
     // increment() {}
     // decrement() {} both at different values
 }   
