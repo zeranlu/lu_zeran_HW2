@@ -95,16 +95,30 @@ body {
   background-color: #a4744e;
 }
 
-.hero h2 {
+h2 {
   text-align: center;
   font-size: 200%;
   margin-top: 5%;
   color: #FFF;
 }
+
 .hero {
   background-color: #245576;
+  border: 1rem solid #542d24;
 }
 
 .strike-text.strike {
   text-decoration: line-through;
+}
+
+#overview-section {
+  background-color: #2b658a;
+}
+
+#use-section {
+  background-color: #245576;
+}
+
+#demo-section {
+  background-color: #2b658a;
 }/*# sourceMappingURL=main.css.map */
