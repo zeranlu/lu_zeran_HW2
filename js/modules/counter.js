@@ -1,6 +1,7 @@
 export class Counter {
     constructor(selector, initialValue = 0) {
         this.count = initialValue;
+        this.initialValue = initialValue;
         this.selector = selector;
         this.mount();
     }
@@ -64,7 +65,7 @@ export class Counter {
     }
 
     reset() {
-        this.count = 0;
+        this.count = this.initialValue;
         this.update();
     }
     // add new state methods, and "if" restrictions
