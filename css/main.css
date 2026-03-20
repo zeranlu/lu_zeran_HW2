@@ -58,6 +58,34 @@ button.blocked:hover {
     margin: 2rem;
   }
 }
+header {
+  background-color: #2b658a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 200%;
+  text-decoration: none;
+  color: #FFF;
+}
+
 .hero h2 {
   text-align: center;
 }
