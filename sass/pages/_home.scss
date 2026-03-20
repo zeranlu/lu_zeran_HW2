@@ -1,8 +1,15 @@
 @use '../abstracts' as a;
 
+body {
+    background-color: a.$tertiary-color;
+}
+
 .hero {
     h2 {
         text-align: center;
+        font-size: 200%;
+        margin-top: 5%;
+        color: a.$white;
     }
 
     background-color: a.$primary-color;

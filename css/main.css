@@ -63,17 +63,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
   display: flex;
-  width: 50%;
-  margin-left: auto;
   text-align: center;
   justify-content: space-evenly;
   align-items: center;
+  padding: 1.5rem;
+  margin: auto;
 }
 
 nav ul li {
@@ -86,8 +85,21 @@ nav ul li a {
   color: #FFF;
 }
 
+@media screen and (min-width: 768px) {
+  nav ul {
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+}
+body {
+  background-color: #a4744e;
+}
+
 .hero h2 {
   text-align: center;
+  font-size: 200%;
+  margin-top: 5%;
+  color: #FFF;
 }
 .hero {
   background-color: #245576;
