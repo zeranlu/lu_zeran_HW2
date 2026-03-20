@@ -40,8 +40,29 @@ button.blocked:hover {
   transition: none;
 }
 
+.cookies {
+  margin: 4rem;
+}
+
+.cookies:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(110%);
+}
+
+.cookies:active {
+  transform: scale(90%);
+}
+
+@media screen and (min-width: 768px) {
+  .cookies {
+    margin: 2rem;
+  }
+}
 .hero h2 {
   text-align: center;
+}
+.hero {
+  background-color: #245576;
 }
 
 .strike-text.strike {

@@ -1,7 +1,11 @@
+@use '../abstracts' as a;
+
 .hero {
     h2 {
         text-align: center;
     }
+
+    background-color: a.$primary-color;
 }
 
 .strike-text.strike {

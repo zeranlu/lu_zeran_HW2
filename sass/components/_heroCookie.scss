@@ -1,0 +1,18 @@
+.cookies {
+    margin: 4rem;
+}
+
+.cookies:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(110%);
+}
+
+.cookies:active {
+    transform: scale(90%);
+}
+
+@media screen and (min-width: 768px) {
+    .cookies {
+        margin: 2rem;
+    }
+}
