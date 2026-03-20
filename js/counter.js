@@ -133,8 +133,13 @@ export class StepCounter extends Counter {
     }
 
     decrement() {
-        this.count = this.count - this.step;
-        this.update();
+
+        if (count > 0) {
+            this.count = this.count - this.step;
+            this.update();
+        } else {
+            return
+        }
     }
 
     update() {
