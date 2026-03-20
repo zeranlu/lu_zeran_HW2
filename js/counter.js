@@ -90,13 +90,40 @@ export class Counter {
 // StepCounter is the sub class
 
 
-class StepCounter extends Counter {
+export class StepCounter extends Counter {
     constructor(selector, initialValue = 0, step = 1) {
         // super is the keyword that allows parent inheritance
         super(selector, initialValue);
         this.step = step;
         // add step property
         // this.step = step;
+    }
+
+    mount() {
+        super.mount();
+
+        const stepContainer = document.querySelector(this.selector);
+
+        this.stepDisplay = document.createElement("div");
+        // this.stepButtonInc = document.createElement("button");
+        this.IncButton.textContent = "Increment by Step";
+
+        // this.stepButtonDec = document.createElement("button");
+        this.DecButton.textContent = "Decrement by Step";
+
+        stepContainer.appendChild(this.stepDisplay);
+        // stepContainer.appendChild(this.stepButtonInc);
+        // stepContainer.appendChild(this.stepButtonDec);
+
+        this.update();
+
+        this.IncButton.addEventListener("click", () => {
+            this.increment();
+        });
+
+        this.DecButton.addEventListener("click", () => {
+            this.decrement();
+        });
     }
 
     // override parent increment
@@ -106,8 +133,17 @@ class StepCounter extends Counter {
     }
 
     decrement() {
-        this.count = this.count - this.step;
-        this.update();
+
+        if (this.count > 0) {
+            this.count = this.count - this.step;
+            this.update();
+        } else {
+            return
+        }
+    }
+
+    update() {
+        this.display.textContent = `Step: ${this.count}`;
     }
     // increment() {}
     // decrement() {} both at different values
