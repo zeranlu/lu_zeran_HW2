@@ -58,6 +58,7 @@ export class Counter {
         if (this.count > 0) {
             this.count--;    
         } else {
+            this.DecButton.classList.toggle("blocked");
             return;
         }
         
@@ -82,6 +83,11 @@ export class Counter {
     update() {
         this.display.textContent = `Count: ${this.count}`;
 
+        if (this.count < 0) {
+            this.DecButton.classList.add("blocked");
+        } else {
+            this.DecButton.classList.remove("blocked");
+        }
         // classList.toggle() this.count===0;
     }
 }
@@ -145,6 +151,12 @@ export class StepCounter extends Counter {
 
     update() {
         this.display.textContent = `Step: ${this.count}`;
+
+        if (this.count < this.step) {
+            this.DecButton.classList.add("blocked");
+        } else {
+            this.DecButton.classList.remove("blocked");
+        }
     }
     // increment() {}
     // decrement() {} both at different values
