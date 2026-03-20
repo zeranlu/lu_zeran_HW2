@@ -134,7 +134,7 @@ export class StepCounter extends Counter {
 
     decrement() {
 
-        if (this.count > 0) {
+        if (this.count >= this.step) {
             this.count = this.count - this.step;
             this.update();
         } else {
